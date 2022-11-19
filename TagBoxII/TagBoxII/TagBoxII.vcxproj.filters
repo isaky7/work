@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TagBoxII.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TagBoxIIDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPictureEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSplashDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSplashThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainGameDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CAbout.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayway.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameFalseDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TagBoxII.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TagBoxIIDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPictureEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSplashDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSplashThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainGameDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CAbout.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayway.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameFalseDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TagBoxII.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TagBoxII.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="C:\Users\she%27r%27r%27y\Downloads\index.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TagBoxII.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="c:\users\she%27r%27r%27y\downloads\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\速抠图_1_.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\6ccab65b8fcb82718e4cf3919ba58223.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\速抠图_2_(1).ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\桌面\20220528073808_4a7f1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\棋盘.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\库洛米开始.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\速抠图_3_.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\桌面\按钮.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\按钮.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\按钮.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\按钮(1).ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\about.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\游戏界面.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\启动动画.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\开始页面.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\应用图标.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\230156170230160135233162152-1-psd.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\qq22915519023113713520221116134219.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\she%27r%27r%27y\Downloads\23eb7e50dd0333537f6cdd73c48eac-unscreen.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\A图标.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\图标.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\开始界面2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="E:\标记方格\备选背景2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="e:\标记方格\bitmap8.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
