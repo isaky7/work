@@ -7,6 +7,7 @@
 #include "afxdialogex.h"
 #include"CPlayway.h"
 #include"CGameFalseDlg.h"
+#include"gdiplus.h"
 // CMainGame 对话框
 
 IMPLEMENT_DYNAMIC(CMainGameDlg, CDialog)
@@ -23,6 +24,13 @@ CMainGameDlg::~CMainGameDlg()
 
 void CMainGameDlg::DoDataExchange(CDataExchange* pDX)
 {
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			TagBox[i][j] = -1;
+		}
+	}
 	CDialog::DoDataExchange(pDX);
 }
 
@@ -58,7 +66,11 @@ BOOL CMainGameDlg::OnInitDialog()
 	int iYpos = rtDesk.Height() / 2 - rtDlg.Height() / 2;
 	SetWindowPos(NULL, iXpos, iYpos, 0, 0, SWP_NOOWNERZORDER | SWP_NOSIZE | SWP_NOZORDER);//对话框居中
 
-
+	m_static1.SubclassDlgItem(IDC_point, this);
+	m_font.CreatePointFont(170, _T("宋体"));
+	m_static1.SetFont(&m_font);
+	m_static2.SubclassDlgItem(IDC_point2, this);
+	m_static2.SetFont(&m_font);
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 异常: OCX 属性页应返回 FALSE
 }
@@ -89,9 +101,24 @@ void CMainGameDlg::OnPaint()
 	//游戏绘制
 	CDC* pDC = GetDC();
 	ReleaseDC(pDC);
-	Tag();
 
-	for (i = 0; i < 50; i++) {
+	Tag();
+	
+		CPen pen(PS_SOLID, 2, RGB(0, 0, 0));
+		dc.SelectObject(pen);
+		for (int i = 0; i < (SIZE + 1)/*下在格子里，要多画一条线*/; i++)
+		{
+			dc.MoveTo(450, 100 + i * 30);
+			dc.LineTo(1050, 100 + i * 30);
+		}//绘制棋盘横线
+		for (int i = 0; i < (SIZE + 1); i++)
+		{
+			dc.MoveTo(450 + i * 30, 100);
+			dc.LineTo(450 + i * 30, 700);
+		}//绘制棋盘竖线
+	
+		
+		for (i = 0; i < 50; i++) {
 		for (j = 0; j < 50; j++) {
 			if (TagBox[i][j]) { TagStyle(i, j); }
 		}
@@ -113,6 +140,8 @@ void CMainGameDlg::MeanPoint(CPoint p)
 
 void CMainGameDlg::Background(CDC* pDC)
 {
+	
+
 }
 
 
@@ -180,12 +209,6 @@ void CMainGameDlg::OnTimer(UINT_PTR nIDEvent)
 	_itoa_s(digit, ch, 10);
 	CString text(ch);
 	SetDlgItemTextW(IDC_point, text);
-	if (digit == 60) {
-		//游戏结束得分为
-		ShowWindow(SW_HIDE);//隐藏第一个对话框
-		CGameFalseDlg  FalseDlg;
-		FalseDlg.DoModal();//建立模态对话框
-	}
 	CDialog::OnTimer(nIDEvent);
 }
 
